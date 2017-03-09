@@ -17,6 +17,16 @@
 
 import pickle
 
-enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
+enron_data = pickle.load(open("final_project_dataset.pkl", "r"))
+
+if False:
+    count=0
+    for key in enron_data:
+        print enron_data[key]['poi']
+        if enron_data[key]['poi'] == 1:
+            count+= 1
 
 
+
+
+print count
